@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #dfedf0;
+    color: #333;
+}
+
+.container {
+    margin: 2rem auto;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-loader {
+    text-align: center;
+    width: 100%;
+    background: #383356;
+    color: #fff;
+    padding: 2.3rem 0;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in;
+}
+
+.btn-loader:hover {
+    cursor: pointer;
+    background: #6f35db;
+}
+
+.bg-dark {
+    background: #6f35db;
+    color: #fff;
+}
+
+.bg-light {
+    background: #dfedf0;
+}
+
+#calendar {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 90vh;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3.7rem;
+}
+
+
+/* Column 1 */
+#calendar .column-1,
+#calendar .column-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+    padding: 0.4rem 0;
+}
+
+#calendar .column-2 {
+    padding-bottom: 1.5rem;
+}
+
+#calendar .day span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+#calendar .content {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+#calendar .month {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+
+#calendar .time {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+#calendar .view p {
+    line-height: 1.9;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+#calendar .view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#calendar .view i {
+    font-size: 1rem;
+}
+
+#calendar .content-event {
+    padding: 1rem;
+    height: 200px;
+}
+
+.content-event:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 5px solid #fff;
+}
